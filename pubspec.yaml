@@ -1,0 +1,37 @@
+name: kpssapp
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+3
+
+environment:
+  sdk: ^3.10.8
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  shared_preferences: ^2.5.4
+  phosphor_flutter: ^2.1.0
+  purchases_flutter: ^9.15.0
+  provider: ^6.1.5+1
+  google_mobile_ads: ^7.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0 # Doğru yeri burası: dev_dependencies'in hemen altı
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  android: true
+  image_path: "assets/icon/icon.png"
+  adaptive_icon_foreground: "assets/icon/icon_foreground.png" # Şeffaf logomuz
+  adaptive_icon_background: "#1E3A5F" 
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icon/ # İkonu uygulama içinde de kullanmak istersen bulunsun
